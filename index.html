@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form</p>
+    <form method="post" id="survey-form" action="#">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+        <legend>You liking this so far</legend>
+        <input type="radio" id="yes" name="like" value="yes" />
+        <label for="yes">Yes</label><br />
+        <input type="radio" id="no" name="like" value="no" />
+        <label for="no">No</label><br />
+        <label for="email" id="email-label">email address</label>
+        <input
+          placeholder="enter your email"
+          required
+          id="email"
+          type="email"
+          name="email"
+          size="20"
+        /><br />
+
+        <label for="number" id="number-label">Favourite number</label><br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="100"
+          placeholder="1-100"
+        /><br />
+
+        <label for="dropdown" id="dropdown-label">Select an option</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <input type="checkbox" id="checkbox" name="checkbox" value="agree" />
+        <label for="checkbox">I agree to the terms and conditions</label><br />
+        <input
+          type="checkbox"
+          id="checkbox2"
+          name="checkbox2"
+          value="subscribe"
+        />
+        <label for="checkbox2">Subscribe to newsletter</label><br />
+        <label for="checkbox3">I want to receive promotional emails</label>
+        <input
+          type="checkbox"
+          id="checkbox3"
+          name="checkbox3"
+          value="promotional"
+        />
+
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Enter your comments here..."
+        ></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+:root {
+      --bg: #ffffff;
+      --text: #111111;
+      --card-bg: #f0f0f0;
+      --accent: #4f46e5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a2e;
+        --text: #e0e0e0;
+        --card-bg: #16213e;
+        --accent: #818cf8;
+      }
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: sans-serif;
