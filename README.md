@@ -24,8 +24,7 @@ I wanted to build something clean and functional that works on both mobile and d
 
 ## 🚀 Live Demo
 
-[Click here to view the live site](#) 
-*(I'll add the Netlify link once I deploy it)*
+https://survey-form-practise.netlify.app/
 
 ## 🛠️ Tools Used
 
